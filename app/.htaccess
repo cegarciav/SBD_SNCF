@@ -1,5 +1,5 @@
 DirectoryIndex index.php
 
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_FILENAME}.php !-f
 RewriteRule ^([\w-]+)$ $1.php [L]
