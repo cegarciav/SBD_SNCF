@@ -16,7 +16,7 @@
             
             <div id="homepage"> <!-- Welcome message on the homepage -->
                 <p>
-                    Welcome to the best website ever. Why's it the best ? Because it doens't do anything but showing a message saying that, so it must be.
+                    Welcome to the Amadeus memory monitoring service.
                 </p>
             </div>
         </body>
