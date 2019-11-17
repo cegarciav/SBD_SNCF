@@ -1,18 +1,20 @@
 <?php
 
   if (
-      isset($_GET["nom_dep"]) &&
-      isset($_GET["nom_arr"]) &&
-      isset($_GET["date_dep"]) &&
-      isset($_GET["date_arr"]) &&
-      isset($_GET["heure"])
+      isset($_POST["nom_dep"]) &&
+      isset($_POST["nom_arr"]) &&
+      isset($_POST["date_dep"]) &&
+      isset($_POST["date_arr"]) &&
+      isset($_POST["heure"])
     )
   {
-    $start_name = $_GET["nom_dep"];
-    $stop_name = $_GET["nom_arr"];
-    $start_date = $_GET["date_dep"];
-    $stop_date = $_GET["date_arr"];
-    $minimum_time = $_GET["heure"];
+    $start_name = $_POST["nom_dep"];
+    $stop_name = $_POST["nom_arr"];
+    $start_date = $_POST["date_dep"];
+    $stop_date = $_POST["date_arr"];
+    $minimum_time = $_POST["heure"];
+
+    
 
     require_once "../conexion.php";
 
