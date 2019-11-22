@@ -50,7 +50,7 @@ foreach($rows as $index => $valor)
     <div class = "text">
 <h2>Choisissez votre voyage</h2>
 <!--Make sure the form has the autocomplete function switched off:-->
-<form autocomplete="off" action="prueba.php" onsubmit="return valider_dates()" method="post">
+<form autocomplete="off" action="show_trajectories.php" onsubmit="return valider_dates()" method="post">
     <p>
   <div class="autocomplete" style="width:300px;">Gare de depart : 
     <input id="nom_dep" type="text" name="myCountry" placeholder="Gare de départ" required> 
