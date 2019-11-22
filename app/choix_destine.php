@@ -26,7 +26,7 @@ foreach($rows as $index => $valor)
     function valider_dates(){
         var startDt=document.getElementById("date_dep").value;
         var finDt=document.getElementById("date_arr").value;
-        if(startDt>finDt)
+        if(startDt>finDt && !document.getElementById("allers").checked)
         {
             alert("La date de retour doit être superieur à la date d'aller.");
             return false;
