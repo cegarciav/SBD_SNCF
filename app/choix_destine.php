@@ -1,17 +1,28 @@
 <?php
 include_once("conexion.php");
-$req = "SELECT ville FROM gare";
+$req = "SELECT DISTINCT ville FROM gare";
 $sql = mysqli_query($conexion, $req);
 $rows = $sql->fetch_all();
 $row = [];
 foreach($rows as $index => $valor)
 {
+
+  array_push($row, $valor[0]." (Toutes les gares)");
+}
+$req = "SELECT nom FROM gare";
+$sql = mysqli_query($conexion, $req);
+$rows = $sql->fetch_all();
+
+foreach($rows as $index => $valor)
+{
   array_push($row, $valor[0]);
 }
+
 ?>
 
 <script type="text/javascript">
-    
+
+
     function valider_dates(){
         var startDt=document.getElementById("date_dep").value;
         var finDt=document.getElementById("date_arr").value;
@@ -53,13 +64,17 @@ foreach($rows as $index => $valor)
   <p>Heure :
         <input  type="time" id="heure" name="heure">
     </p>
+    <p><input type="checkbox" name = "allers" id="allers" onchange="retour_on()">Aller simple
+      
+
+    </p>
     <p style="width:150px;">Date d'aller : 
         <input type="date" id="date_dep" name="date_dep" required min=<?php
          echo date('Y-m-d');
      ?>>
     </p>
     <p style="width:150px;">Date de retour : 
-        <input type="date" id="date_arr" name="date_arr" required>
+        <input type="date" id="date_arr" name="date_arr" required min =<?php echo date('Y-m-d');?>>
     </p>
     <button type="submit">Accepter</button>
 </div>
@@ -67,6 +82,16 @@ foreach($rows as $index => $valor)
 </form>
 
 <script type="text/javascript">
+
+    function retour_on()
+  {
+    var simple = document.getElementById("allers");
+    if(simple.checked)
+      document.getElementById("date_arr").disabled = true;
+    else 
+      document.getElementById("date_arr").disabled = false;
+  }
+    
 
     function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
