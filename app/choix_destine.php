@@ -53,12 +53,12 @@ foreach($rows as $index => $valor)
 <form autocomplete="off" action="show_trajectories.php" onsubmit="return valider_dates()" method="post">
     <p>
   <div class="autocomplete" style="width:300px;">Gare de depart : 
-    <input id="nom_dep" type="text" name="myCountry" placeholder="Gare de départ" required> 
+    <input id="nom_dep" type="text" name="nom_dep" placeholder="Gare de départ" required> 
   </div>
   </p>
   <p>
   <div class="autocomplete" style="width:300px;">Gare d'arrivée : 
-    <input id="nom_arr" type="text" name="myCountry" placeholder="Gare d'arrivée" required>
+    <input id="nom_arr" type="text" name="nom_arr" placeholder="Gare d'arrivée" required>
   </div>
   </p>
   <p>Heure :
