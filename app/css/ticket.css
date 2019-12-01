@@ -1,0 +1,67 @@
+.ticket_box
+{
+  display:flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1em;
+}
+
+.row_info
+{
+  display:flex;
+  flex-direction: row;
+  width: 95%;
+  margin-bottom: 0.8em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.ticket_info
+{
+  width: 47%;
+}
+
+.ticket_data
+{
+  margin: 0.3em;
+}
+
+.user_data
+{
+  margin: 0.3em;
+}
+
+.user_info
+{
+  width: 47%;
+  text-align: right;
+}
+
+.header_station
+{
+  width: 15%;
+}
+
+.nom_station
+{
+  width: 35%;
+}
+
+.date_station
+{
+  width: 25%;
+}
+
+.time_station
+{
+  width: 25%;
+}
+
+.price_info
+{
+  width: 100%;
+  text-align: right;
+  margin: 0.3em;
+}

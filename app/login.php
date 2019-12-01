@@ -6,7 +6,7 @@
 <body>
 
 	<div>
-		<form action="checklogin.php" method="POST">
+		<form action="checklogin.php" method="post">
 			<div>
 				<label for="uname"><b>User : </b></label>
 				<input type="text" placeholder="User" id="user" name="user" required></br>

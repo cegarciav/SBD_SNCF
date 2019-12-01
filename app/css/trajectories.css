@@ -1,0 +1,177 @@
+﻿body
+{
+  background-color: #b59dd8;
+  font-family: verdana;
+  margin: 0px;
+}
+
+i
+{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.trip_box
+{
+  width: 80%;
+  padding: 1.5em;
+  margin: auto;
+  background-color: white;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  border-radius: 1em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ticket_details
+{
+  display: flex;
+  flex-direction: row;
+  margin: 0.4em;
+}
+
+.schedule_details
+{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.station_details
+{
+  width: 30%;
+}
+
+.time
+{
+  text-align: center;
+}
+
+.position
+{
+  text-align: center;
+}
+
+.duration
+{
+  width: 30%;
+  text-align: center;
+}
+
+.sell_details
+{
+  width: 20%;
+}
+
+.price_details
+{  
+  text-align: right;
+  margin: 0.8em;
+  font-size: 1.5em;
+}
+
+.sell_button
+{
+  background-color: #0c1297;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  float: right;
+  cursor: pointer;
+}
+
+.train_details
+{
+  position: relative;
+  display: inline-block;
+}
+
+.train_button
+{
+  background-color: #B31313;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.train_content
+{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 500px;
+}
+
+.train_content a:hover
+{
+  background-color: #ddd;
+}
+
+.train_details:hover .train_content
+{
+  display: block;
+}
+
+.train_details:hover .train_button
+{
+  background-color: #970C0C;
+}
+
+.ride_detail
+{
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.ride_gare
+{
+  font-size: 1.1em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 0.5em; 
+}
+
+.ride_train
+{
+  font-size: 0.8em;
+  margin-left: 2em;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.ride_hour
+{
+  font-size: 0.8em;
+  margin-left: 2em;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.train_change
+{
+  margin-left: 4em;
+}
+
+.selling_header
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+  background-color: #1d1089;
+  width: 100%;
+  padding: 1.5em;
+  margin: 0px;
+  color: white;
+}
+
+.header_content
+{
+  margin-left: 1em;
+  margin-right: 1em;
+}
